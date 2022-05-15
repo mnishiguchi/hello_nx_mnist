@@ -45,7 +45,11 @@ defmodule HelloNxMnist.MixProject do
       {:telemetry_poller, "~> 1.0"},
       {:gettext, "~> 0.18"},
       {:jason, "~> 1.2"},
-      {:plug_cowboy, "~> 2.5"}
+      {:plug_cowboy, "~> 2.5"},
+      {:axon, "~> 0.1.0-dev", github: "elixir-nx/axon"},
+      {:exla, "~> 0.2.0", sparse: "exla", override: true},
+      {:nx, "~> 0.2.0", sparse: "nx", override: true},
+      {:scidata, "~> 0.1.5"}
     ]
   end
 
